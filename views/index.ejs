@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bot</title>
+</head>
+<body>
+    <h1>Products list</h1>
+    <ul>
+        <% products.forEach(function(product) { %>
+          <li>
+            <strong><%= product.productName %></strong>
+          </li>
+        <% }); %>
+    </ul>
+    <h1>Order list</h1>
+    <ul>
+      <% orders.forEach(function(order) { %>
+        <li>
+          <strong><%= order.user %></strong>
+          <span><%= order.message %></span>
+        </li>
+      <% }); %>
+  </ul>
+</body>
+</html>
+
